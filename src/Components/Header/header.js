@@ -1,10 +1,18 @@
 import './header.css';
 
 function Header(props){
-    const { name } = props;
+    const { name, isAuthenticated } = props;
     return (
-        <div class="header">
-            <h3>Hi, {name}!</h3>
+        <div className="header">
+            <div>TheChennaiShop</div>
+            {isAuthenticated ?
+             <div>
+                <span>Hi, {name}!</span>
+                <button>Sign out</button>
+            </div> : 
+            <div>
+                <button>Sign in</button>
+            </div>}
         </div>
     )
 }
