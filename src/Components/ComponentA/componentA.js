@@ -17,7 +17,3 @@ const ComponentA = () => {
 }
 
 export default ComponentA;
-
-
-//Hooks -> a function
-// state -> 

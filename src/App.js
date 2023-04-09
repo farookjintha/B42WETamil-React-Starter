@@ -4,6 +4,7 @@ import Login from './Components/Login/login';
 import Header from './Components/Header/header';
 import Layout from './Components/Layout/layout';
 import ComponentA from './Components/ComponentA/componentA';
+import ClassComponentA from './Components/ClassComponents/ClassComponentA/ClassComponentA';
 
 //JSX Format - JS and XML
 function App() {
@@ -52,6 +53,7 @@ function App() {
   // -> We can send data from Parent to Child via Props(properties)
   return (
     <div className="App">
+      <Header />
       {/* <Header name={name} age={13} isAuthenticated={isAuthenticated} address={'Chennai'} />
       <h1> Welcome to our App!</h1>
       {isAuthenticated && <h2>Have a nice day!</h2>}
@@ -59,8 +61,13 @@ function App() {
       <Layout products={products} /> */}
 
       <ComponentA />
+      <ClassComponentA />
     </div>
   );
 }
 
 export default App;
+
+
+// class -> SnakeCase -> MyClassName
+// functions or variables or objects -> camelCase -> myVariableName or myObjName or myArrayName

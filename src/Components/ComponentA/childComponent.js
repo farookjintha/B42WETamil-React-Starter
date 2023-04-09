@@ -51,7 +51,7 @@ const ChildComponent = (props) => {
                 <input type='text' onChange={handleUserName} placeholder='Enter name' />
                 <input type='text' onChange={handleUserCity}  placeholder='Enter city' />
                 <input type='text' onChange={handleUserMobile}  placeholder='Enter mobilenumber' />
-                <button>Submit</button>
+                <button type="button" className="btn btn-primary">Submit</button>
             </form>
         </div>
     )
