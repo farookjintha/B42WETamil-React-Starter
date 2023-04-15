@@ -1,5 +1,6 @@
 import { Component } from "react";
 import ClassComponentB from "../ClassComponentB";
+import './classComponent.css';
 
 class ClassComponentA extends Component {
     constructor(props){
@@ -33,7 +34,7 @@ class ClassComponentA extends Component {
     render(){
         console.log('Render called...')
         return(
-            <div>
+            <div className="class-container">
                 <h2>Class Component</h2>
                 <h4>Counter: {this.state.counter}</h4>
                 <button onClick={() => this.handleCounter()}>Click</button>
